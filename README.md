@@ -39,13 +39,13 @@
 * So, for that we use Secret component. 
 * Secret is used to store secret data.It stores data in base64 encoded format. 
 * They are connected to pods simiar to ConfigMap, so that pods get the data.
-## 4.Volumes
+##4.Volumes
 * If a pod restarts or stops, the data inside it will be gone foreveer.For that volumes are used.
 * They are used for data persistence.
 * It basically attaches a physical storage on a hard drive to your pod.
 * This storage can either  be on the same server node or on a remote storage i.e outside
   of the k8s cluster. 
-## 5.Deployment and StatefulSet
+##5.Deployment and StatefulSet
 * Let's say you have a working node that contains 2 pods, application and database pods.
 * Suppose the  application pod dies or crushes or you have to restart the pod.
 * In that case , a user would not be able to reach the application, which is bad in production.
